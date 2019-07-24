@@ -1,0 +1,36 @@
+{
+    "name": "ChatCom",
+    "description": "Sistema de Chat",
+    "authors": [
+        {
+            "name": "Abel Lopez Paniagua"
+        },
+        {
+            "name": "Pablo Fernando Hilaquita Yujra",
+            "email": "PabloHy2898@hotmail.com"
+        },
+        {
+            "name": "Mauricio Gamarra Vargas",
+            "email": "mauriciogamarravargas@gmail.com"
+        },
+        {
+            "name":"Crithian Gutierrez Almendras ",
+            "email": "krizg@gmail.com"
+        },
+        {
+            "name":"Kevin Cardenas Ramirez"
+        }
+    ],
+    "config":{
+        "vendor-dir": "App/vendor/"
+    },
+    "autoload": {
+        "psr-4": {  "Controller\\": "App/Controller/",
+                    "Core\\": "App/Core/",
+                    "Library\\": "App/Lib/",
+                    "Model\\":"App/Model/"
+                }
+    },
+    "require": {
+    }
+}
