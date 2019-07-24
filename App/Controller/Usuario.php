@@ -7,6 +7,10 @@ class Usuario extends Library\Controller
     {
         $this->vista('Usuario/login');
     }
+    public function Perfil()
+    {
+        $this->vista('Usuario/perfil');
+    }
 }
 
 ?>
