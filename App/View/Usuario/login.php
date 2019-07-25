@@ -82,10 +82,6 @@
                 <input type="password" class="form-control" placeholder="Enter your password">
               </div>
               <button class="btn btn-brand-02 btn-block">inicia Sesion</button>
-              <div class="divider-text">o</div>
-              <button class="btn btn-outline-facebook btn-block">inicia Sesion con Facebook</button>
-              <button class="btn btn-outline-twitter btn-block">inicia Sesion con Twitter</button>
-              <div class="tx-13 mg-t-20 tx-center">No tienes una cuenta? <a href="page-signup.html">Crear una cuenta</a></div>
             </div>
           </div><!-- sign-wrapper -->
         </div><!-- media -->
