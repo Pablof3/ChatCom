@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 
@@ -34,12 +34,15 @@
   <title>DashForge Responsive Bootstrap 4 Dashboard Template</title>
 
   <?php layout('Master/styles') ?>
+  <link rel="stylesheet" href="<?php asset('assets/css/dashforge.contacts.css') ?>">
 </head>
 
 <body class="app-contact">
-<?php layout('Master/sidebar')?>
+
+  <?php layout('Master/sidebar') ?>
+
   <div class="content ht-100v pd-0">
-    <?php layout('Master/sidebar')?>
+    <?php layout('Master/topbar')?>
     <div class="content-body pd-0">
       <div class="contact-wrapper contact-wrapper-two">
         <div class="contact-navleft">
@@ -678,6 +681,8 @@
     </div>
   </div>
 
-  <?php layout('Master/scripts')?>
+  <?php layout('Master/scripts') ?>
+  <script src="<?php asset('assets/js/dashforge.contacts.js') ?>"></script>
 </body>
+
 </html>

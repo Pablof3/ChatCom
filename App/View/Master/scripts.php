@@ -5,7 +5,6 @@
 
 <script src="<?php asset('assets/js/dashforge.js') ?>"></script>
 <script src="<?php asset('assets/js/dashforge.aside.js') ?>"></script>
-<script src="<?php asset('assets/js/dashforge.contacts.js')?>"></script>
 
 
 

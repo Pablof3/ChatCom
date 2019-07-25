@@ -1,3 +1,8 @@
+<?php
+$url = explode('/', $_GET['url']);
+$class = $url[0];
+$method = $url[1];
+?>
 <aside class="aside aside-fixed">
     <div class="aside-header">
         <a href="index.html" class="aside-logo">dash<span>forge</span></a>
@@ -13,7 +18,7 @@
                 <div class="aside-alert-link">
                     <a href="" class="new" data-toggle="tooltip" title="You have 2 unread messages"><i data-feather="message-square"></i></a>
                     <a href="" class="new" data-toggle="tooltip" title="You have 4 new notifications"><i data-feather="bell"></i></a>
-                    <a href="" data-toggle="tooltip" title="Sign out"><i data-feather="log-out"></i></a>
+                    <a href="<?=RUTA_URL?>Usuario/Login" data-toggle="tooltip" title="Sign out"><i data-feather="log-out"></i></a>
                 </div>
             </div>
             <div class="aside-loggedin-user">
@@ -26,55 +31,32 @@
             <div class="collapse" id="loggedinMenu">
                 <ul class="nav nav-aside mg-b-0">
                     <li class="nav-item"><a href="" class="nav-link"><i data-feather="edit"></i> <span>Editar Perfil</span></a></li>
-                    <li class="nav-item"><a href="" class="nav-link"><i data-feather="user"></i> <span>Ver Perfil</span></a></li>
+                    <li class="nav-item"><a href="<?=RUTA_URL?>Usuario/Perfil" class="nav-link"><i data-feather="user"></i> <span>Ver Perfil</span></a></li>
                     <li class="nav-item"><a href="" class="nav-link"><i data-feather="settings"></i> <span>Account Settings</span></a></li>
                     <li class="nav-item"><a href="" class="nav-link"><i data-feather="help-circle"></i> <span>Help Center</span></a></li>
-                    <li class="nav-item"><a href="<?=RUTA_URL?>Usuario/Login" class="nav-link"><i data-feather="log-out"></i> <span>Salir</span></a></li>
+                    <li class="nav-item"><a href="<?= RUTA_URL ?>Usuario/Login" class="nav-link"><i data-feather="log-out"></i> <span>Salir</span></a></li>
                 </ul>
             </div>
         </div><!-- aside-loggedin -->
         <ul class="nav nav-aside">
             <li class="nav-label">Dashboard</li>
-            <li class="nav-item with-sub">
-                <a href="" class="nav-link"><i data-feather="file"></i> <span>Usuarios</span></a>
+            <li class="nav-item with-sub <?=($class=='Usuario')?'active show':''?> ">
+                <a href="" class="nav-link"><i data-feather="users"></i> <span>Usuarios</span></a>
                 <ul>
-                    <li><a href="">Registrar Usuario</a></li>
-                    <li><a href="<?=RUTA_URL?>Usuario/Registros">Registros</a></li>
+                    <li class="<?=($class=='Usuario' && $method=='Registro')?'active':''?>"><a href="<?=RUTA_URL?>Usuario/Registro">Registrar Usuario</a></li>
+                    <li class="<?=($class=='Usuario' && $method=='Registros')?'active':''?>"><a href="<?= RUTA_URL ?>Usuario/Registros">Registros</a></li>
                 </ul>
             </li>
-            <li class="nav-item with-sub">
-                <a href="" class="nav-link"><i data-feather="file"></i> <span>Areas de Trabajo</span></a>
+            <li class="nav-item with-sub <?=($class=='Area')?'active show':''?>">
+                <a href="" class="nav-link"><i data-feather="briefcase"></i> <span>Areas de Trabajo</span></a>
                 <ul>
-                    <li><a href="">Registrar Area</a></li>
-                    <li><a href="">Mis Areas</a></li>
+                    <li class="<?=($class=='Area' && $method=='Registro')?'active':''?>" ><a href="<?=RUTA_URL?>Area/Registro">Registrar Area</a></li>
+                    <li class="<?=($class=='Area' && $method=='Registros')?'active':''?>"><a href="<?=RUTA_URL?>Area/Registros">Mis Areas</a></li>
                 </ul>
             </li>
             <li class="nav-label mg-t-25">Aplicaciones</li>
-            <li class="nav-item"><a href="app-calendar.html" class="nav-link"><i data-feather="calendar"></i> <span>Calendar</span></a></li>
-            <li class="nav-item"><a href="app-chat.html" class="nav-link"><i data-feather="message-square"></i> <span>Chat</span></a></li>
-            <li class="nav-item"><a href="app-contacts.html" class="nav-link"><i data-feather="users"></i> <span>Contacts</span></a></li>
-            <li class="nav-item"><a href="app-file-manager.html" class="nav-link"><i data-feather="file-text"></i> <span>File Manager</span></a></li>
-            <li class="nav-item"><a href="app-mail.html" class="nav-link"><i data-feather="mail"></i> <span>Mail</span></a></li>
-
-            <li class="nav-label mg-t-25">Pages</li>
-            <li class="nav-item with-sub active show">
-                <a href="" class="nav-link"><i data-feather="user"></i> <span>User Pages</span></a>
-                <ul>
-                    <li class="active"><a href="page-profile-view.html">View Profile</a></li>
-                    <li><a href="page-connections.html">Connections</a></li>
-                    <li><a href="page-groups.html">Groups</a></li>
-                    <li><a href="page-events.html">Events</a></li>
-                </ul>
-            </li>
-            <li class="nav-item with-sub">
-                <a href="" class="nav-link"><i data-feather="file"></i> <span>Other Pages</span></a>
-                <ul>
-                    <li><a href="page-timeline.html">Timeline</a></li>
-                </ul>
-            </li>
-            <li class="nav-label mg-t-25">User Interface</li>
-            <li class="nav-item"><a href="components" class="nav-link"><i data-feather="layers"></i> <span>Components</span></a></li>
-            <li class="nav-item"><a href="collections" class="nav-link"><i data-feather="box"></i> <span>Collections</span></a></li>
+            <li class="nav-item <?=($class=='Chat' && $method=='MisChats')?'active':''?>"><a href="<?=RUTA_URL?>Chat/MisChats" class="nav-link"><i data-feather="message-square"></i> <span>Chat</span></a></li>
+            <li class="nav-item"><a href="<?=RUTA_URL?>Chat/MisChats" class="nav-link"><i data-feather="alert-octagon"></i> <span>Comunicados</span></a></li>
         </ul>
     </div>
 </aside>

@@ -15,6 +15,10 @@ class Usuario extends Library\Controller
     {
         $this->vista('Usuario/registros');
     }
+    public function Registro()
+    {
+        $this->vista('Master/template');
+    }
 }
 
 ?>
