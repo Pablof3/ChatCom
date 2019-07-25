@@ -11,6 +11,10 @@ class Usuario extends Library\Controller
     {
         $this->vista('Usuario/perfil');
     }
+    public function Registros()
+    {
+        $this->vista('Usuario/registros');
+    }
 }
 
 ?>
