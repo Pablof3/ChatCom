@@ -43,7 +43,7 @@ $method = $url[1];
             <li class="nav-item with-sub <?=($class=='Usuario')?'active show':''?> ">
                 <a href="" class="nav-link"><i data-feather="users"></i> <span>Usuarios</span></a>
                 <ul>
-                    <li class="<?=($class=='Usuario' && $method=='Registro')?'active':''?>"><a href="<?=RUTA_URL?>Usuario/Registro">Registrar Usuario</a></li>
+                    <li class="<?=($class=='Usuario' && $method=='Registro')?'active':''?>"><a href="<?=RUTA_URL?>Usuario/Registrar">Registrar Usuario</a></li>
                     <li class="<?=($class=='Usuario' && $method=='Registros')?'active':''?>"><a href="<?= RUTA_URL ?>Usuario/Registros">Registros</a></li>
                 </ul>
             </li>
