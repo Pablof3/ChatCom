@@ -5,11 +5,11 @@ class Area extends Library\Controller
 {
     public function Registro()
     {
-        $this->vista('Master/template');
+        $this->vista('Area/registro');
     }
     public function Registros()
     {
-        $this->vista('Master/template');
+        $this->vista('Area/registros');
     }
 }
 
