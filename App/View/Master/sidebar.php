@@ -56,7 +56,7 @@ $method = $url[1];
             </li>
             <li class="nav-label mg-t-25">Aplicaciones</li>
             <li class="nav-item <?=($class=='Chat' && $method=='MisChats')?'active':''?>"><a href="<?=RUTA_URL?>Chat/MisChats" class="nav-link"><i data-feather="message-square"></i> <span>Chat</span></a></li>
-            <li class="nav-item"><a href="<?=RUTA_URL?>Chat/MisChats" class="nav-link"><i data-feather="alert-octagon"></i> <span>Comunicados</span></a></li>
+            <li class="nav-item <?=($class=='Comunicado' && $method=='MostrarComunicados')?'active':''?>"><a href="<?=RUTA_URL?>Comunicado/MostrarComunicados" class="nav-link"><i data-feather="alert-octagon"></i> <span>Comunicados</span></a></li>
         </ul>
     </div>
 </aside>
