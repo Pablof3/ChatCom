@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -32,106 +33,122 @@
   <?php layout('Master/styles') ?>
 </head>
 
-<body class="page-profile">
+<body>
   <!-- Sidebar -->
-  <?php layout('Master/sidebar')?>
+  <?php layout('Master/sidebar') ?>
   <div class="content ht-100v pd-0">
     <!-- Topbar -->
-    <?php layout('Master/topbar')?>
+    <?php layout('Master/topbar') ?>
     <!-- CONTENIDO -->
     <div class="content-body">
-      <div class="container pd-x-0 tx-13">
-	  <div class="media align-items-stretch justify-content-center ht-100p">
-          <div class="sign-wrapper mg-lg-r-50 mg-xl-r-60">
-            <div class="pd-t-20 wd-100p">
-              <h4 class="tx-color-01 mg-b-5">Crear una nueva cuenta</h4>
-              <p class="tx-color-03 tx-16 mg-b-40">aqui puede crear una cuenta llene todos los campos requeridos.</p>
-
-              <div class="form-group">
-                <label>Ci:</label>
-                <input type="text" class="form-control" placeholder="Ingrese el numero de carnet">
-              </div>
-              <div class="form-group">
-                <div class="d-flex justify-content-between mg-b-5">
-                  <label class="mg-b-0-f">Nombre:</label>
-                </div>
-                <input type="text" class="form-control" placeholder="Ingrese los nombres">
-              </div>
-              <div class="form-group">
-                <label>Apellido Paterno:</label>
-                <input type="text" class="form-control" placeholder="Ingrese el apellido paterno">
-              </div>
-              <div class="form-group">
-                <label>Apellido Materno:</label>
-                <input type="text" class="form-control" placeholder="Ingrese el apellido materno">
-              </div>
-              <div class="form-group">
-                  <label>Calendario:</label>
-                  <input type="date" class="form-control" placeholder="Ingrese la ffecha de nacimiento">
-                </div>
-              <div class="form-group">
-                <label>Direccion:</label>
-                <input type="text" class="form-control" placeholder="Ingrese la direccion del domicilio">
-              </div>
-              <div class="form-group">
-                  <label>Correo:</label>
-                  <input type="email" class="form-control" placeholder="Ingrese correo electronico">
-                </div>
-                <div class="form-group">
-                    <label>Contraseña:</label>
-                    <input type="password" class="form-control" placeholder="Ingrese una contraseña">
+      <div class="pd-x-20 tx-13">
+        <div class="media d-block">
+          <div class="row">
+            <div class="col-12 col-md-8">
+              <h3 class="py-3">Registro de usuario</h3>
+              <form>
+                <fieldset class=" form-fieldset mb-3">
+                  <legend>Datos Usuario</legend>
+                  <div class=" form-row">
+                    <div class="form-group col-12 col-md-6">
+                      <label>Nombre usuario:</label>
+                      <input type="text" class="form-control" placeholder="Ingrese su nombre usuario">
+                    </div>
+                    <div class="form-group col-12 col-md-6">
+                      <label>Correo:</label>
+                      <input type="email" class="form-control" placeholder="Ingrese su Correo">
+                    </div>
                   </div>
-              <div class="form-group">
-                <label>Celular:</label>
-                <input type="text" class="form-control" placeholder="Ingrese el numero de celular">
-              </div>
-              <div class="form-group">
-                <label>Telefono:</label>
-                <input type="text" class="form-control" placeholder="Ingrese el numero de telefono domiciliario">
-              </div>
-              <div class="form-group">
-                <label>Tipo de Cargo:</label>
-                <select class="form-control" name="idcargo">
-                  <option value="1">Tipo de Empleado 1</option>
-                  <option value="2">Tipo de Empleado 2</option>
-                  <option value="3">Tipo de Empleado 3</option>
-                  <option value="4">Tipo de Empleado 4</option>
-                  <option value="5">Tipo de Empleado 5</option>
-                </select>                
-              </div>
-              <div class="form-group">
-                <label>Tipo de Area:</label>
-                <select class="form-control" name="idarea">
-                  <option value="1">Area 1</option>
-                  <option value="2">Area 2</option>
-                  <option value="3">Area 3</option>
-                  <option value="4">Area 4</option>
-                  <option value="5">Area 5</option>
-                </select>                
-              </div>
-
-              
-              <button class="btn btn-brand-02 btn-block">Crear Cuenta</button>
-              <div class="divider-text">o</div>
-              <button class="btn btn-outline-facebook btn-block">Crear cuenta con Facebook</button>
-              <button class="btn btn-outline-twitter btn-block">Crear Cuenta con Twitter</button>
-              <div class="tx-13 mg-t-20 tx-center">Ya tienes una cuenta? <a href="page-signin.html">Inicia Sesion</a></div>
+                  <div class="form-row">
+                    <div class="form-group col-12 col-md-8">
+                      <label>Contraseña:</label>
+                      <input type="password" class="form-control" placeholder="Ingrese una contraseña">
+                    </div>
+                    <div class="form-group col-12 col-md-4">
+                      <label>Rol:</label>
+                      <select name="" id="" class="custom-select">
+                        <option value="">--Seleccione un Rol--</option>
+                        <option value="">Administrador</option>
+                        <option value="">Usuario</option>
+                      </select>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset class="form-fieldset">
+                  <legend>Datos personales de usuario</legend>
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <div class="form-group">
+                        <label>Nombre(s):</label>
+                        <input type="text" class="form-control" placeholder="Ingrese su(s) nombre(s)">
+                      </div>
+                      <div class="form-group">
+                        <label>Apellido(s):</label>
+                        <input type="text" class="form-control" placeholder="Ingrese su(s) apellido(s)">
+                      </div>
+                      <div class="form-group">
+                        <label>CI:</label>
+                        <input type="text" class="form-control" placeholder="Ingrese el numerode su cedula de identidad">
+                      </div>
+                      <div class="form-group">
+                        <label>Direccion:</label>
+                        <input type="text" class="form-control" placeholder="Ingrese direccion ">
+                      </div>
+                      <div class="form-group">
+                        <label>Telefono:</label>
+                        <input type="text" class="form-control" placeholder="Ingrese el numero de telefono">
+                      </div>
+                      <div class="form-group">
+                        <label>Celular:</label>
+                        <input type="text" class="form-control" placeholder="Ingrese el numero de celular ">
+                      </div>
+                      <div class="form-group">
+                        <label>Tipo de Cargo:</label>
+                        <select class=" custom-select" name="idcargo">
+                          <option value="1">Tipo de Empleado 1</option>
+                          <option value="2">Tipo de Empleado 2</option>
+                          <option value="3">Tipo de Empleado 3</option>
+                          <option value="4">Tipo de Empleado 4</option>
+                          <option value="5">Tipo de Empleado 5</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label>Tipo de Area:</label>
+                        <select class=" custom-select" name="idarea">
+                          <option value="1">Area 1</option>
+                          <option value="2">Area 2</option>
+                          <option value="3">Area 3</option>
+                          <option value="4">Area 4</option>
+                          <option value="5">Area 5</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="form-group">
+                        <label for="">Imagen</label>
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="customFile">
+                          <label class="custom-file-label" for="customFile">Subir</label>
+                        </div>
+                        <div class="py-2 d-flex justify-content-center">
+                          <img src="https://via.placeholder.com/400x500" class=" img-fluid" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+                <button class="btn btn-primary" type="submit">Registrar</button>
+                <button class="btn btn-secondary" type="reset">Cancelar</button>
+              </form>
             </div>
-          </div><!-- sign-wrapper -->
-          <div class="media-body pd-y-30 pd-lg-x-50 pd-xl-x-60 align-items-center d-none d-lg-flex pos-relative">
-            <div class="mx-lg-wd-500 mx-xl-wd-550">
-              <img src="https://via.placeholder.com/1280x1225" class="img-fluid" alt="">
-            </div>
-            
-          </div><!-- media-body -->
+          </div>
         </div><!-- media -->
       </div><!-- container -->
     </div><!-- content-body -->
-    
     <!-- FIN CONTENIDO -->
   </div><!-- content -->
-<!-- scripts -->
-  <?php layout('Master/scripts')?>
+  <!-- scripts -->
+  <?php layout('Master/scripts') ?>
 </body>
 
 </html>
