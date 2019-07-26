@@ -66,23 +66,32 @@
             
           </div><!-- media-body -->
           <div class="sign-wrapper mg-lg-l-50 mg-xl-l-60">
-            <div class="wd-100p">
-              <h3 class="tx-color-01 mg-b-5">Iniciar Sesión</h3>
-              <p class="tx-color-03 tx-16 mg-b-40">Bienvenido! inicia sesion para continuar.</p>
-
-              <div class="form-group">
-                <label>Correo o Username</label>
-                <input type="email" class="form-control" placeholder="tunombre@tucorreo.com">
-              </div>
-              <div class="form-group">
-                <div class="d-flex justify-content-between mg-b-5">
-                  <label class="mg-b-0-f">Contraseña</label>
-                  <a href="" class="tx-13">olvidaste tu contraseña?</a>
+            <form action="<?=RUTA_URL?>Usuario/Validar" method="POST">
+              <div class="wd-100p">
+                <h3 class="tx-color-01 mg-b-5">Iniciar Sesión</h3>
+                <p class="tx-color-03 tx-16 mg-b-40">Bienvenido! inicia sesion para continuar.</p>
+  
+                <div class="form-group">
+                  <label>Correo o Username</label>
+                  <input type="email" class="form-control" placeholder="tunombre@tucorreo.com">
                 </div>
-                <input type="Contraseña" class="form-control" placeholder="Ingrese su contraseña">
+                <div class="form-group">
+                  <div class="d-flex justify-content-between mg-b-5">
+                    <label class="mg-b-0-f">Contraseña</label>
+                    <a href="" class="tx-13">olvidaste tu contraseña?</a>
+                  </div>
+                  <input type="Contraseña" class="form-control" placeholder="Ingrese su contraseña">
+                </div>
+                <div class="form-group">
+                  <label for="">Rol</label>
+                    <select name="Rol" id="" class="custom-select">
+                      <option value="1">Administrador</option>
+                      <option value="2">Usuario</option>
+                    </select>
+                </div>
+                <button type="submit"  class="btn btn-brand-02 btn-block">Iniciar sesión</button>
               </div>
-              <button onclick="window.location.href='<?=RUTA_URL?>Usuario/Perfil'"  class="btn btn-brand-02 btn-block">Iniciar sesión</button>
-            </div>
+            </form>
           </div><!-- sign-wrapper -->
         </div><!-- media -->
     </div><!-- container -->

@@ -30,23 +30,22 @@
   <meta name="description" content="Responsive Bootstrap 4 Dashboard Template">
   <meta name="author" content="ThemePixels">
 
-  
+
   <title>DashForge Responsive Bootstrap 4 Dashboard Template</title>
-  
-  <?php layout('Master/styles')?>
-  <link rel="stylesheet" href="<?php asset('assets/css/dashforge.chat.css')?>">
+
+  <?php layout('Master/styles') ?>
+  <link rel="stylesheet" href="<?php asset('assets/css/dashforge.chat.css') ?>">
 </head>
+
 <body class="app-chat">
-  <?php layout('Master/sidebar')?>
+  <?php layout('Master/sidebar') ?>
   <div class="content ht-100v pd-0">
-   <?php layout('Master/topbar')?>
+    <?php layout('Master/topbar') ?>
     <div class="content-body pd-0">
       <div class="chat-wrapper chat-wrapper-two">
-
         <div class="chat-sidebar">
-
           <div class="chat-sidebar-header">
-            <a href="#" data-toggle="dropdown" class="dropdown-link">
+            <!-- <a href="#" data-toggle="dropdown" class="dropdown-link">
               <div class="d-flex align-items-center">
                 <div class="avatar avatar-sm mg-r-8"><span class="avatar-initial rounded-circle">T</span></div>
                 <span class="tx-color-01 tx-semibold">TeamName</span>
@@ -62,7 +61,7 @@
               <div class="dropdown-divider"></div>
               <a href="" class="dropdown-item"><i data-feather="edit-3"></i> Edit Team Details</a>
               <a href="" class="dropdown-item"><i data-feather="shield-off"></i> Hide Muted Channels</a>
-            </div><!-- dropdown-menu -->
+            </div>dropdown-menu -->
           </div><!-- chat-sidebar-header -->
 
           <!-- start sidebar body -->
@@ -71,17 +70,17 @@
             <div class="flex-fill pd-y-20 pd-x-10">
               <div class="d-flex align-items-center justify-content-between pd-x-10 mg-b-10">
                 <span class="tx-10 tx-uppercase tx-medium tx-color-03 tx-sans tx-spacing-1">Todos las areas</span>
-                <a href="#modalCreateChannel" class="chat-btn-add" data-toggle="modal"><span data-toggle="tooltip" title="Create Channel"><i data-feather="plus-circle"></i></span></a>
+                <a href="#modalCreateChannel" class="chat-btn-add" data-toggle="modal"><span data-toggle="tooltip" title="Crear Area"><i data-feather="plus-circle"></i></span></a>
               </div>
               <nav id="allChannels" class="nav flex-column nav-chat mg-b-20">
-                <a href="#general" class="nav-link active"># general</a>
-                <a href="#engineering" class="nav-link"># gerencia</a>
-                <a href="#products" class="nav-link"># atencio al cliente <span class="badge badge-danger">2</span></a>
+                <a href="#general" class="nav-link active"># Direccion General</a>
+                <a href="#engineering" class="nav-link"># Recursos Humanos</a>
+                <a href="#products" class="nav-link"># Marketing <span class="badge badge-danger">2</span></a>
               </nav>
             </div>
 
             <div class="flex-fill pd-y-20 pd-x-10 bd-t">
-              <p class="tx-10 tx-uppercase tx-medium tx-color-03 tx-sans tx-spacing-1 pd-l-10 mg-b-10">Direct Messages</p>
+              <p class="tx-10 tx-uppercase tx-medium tx-color-03 tx-sans tx-spacing-1 pd-l-10 mg-b-10">Mensajes directos</p>
               <div id="chatDirectMsg" class="chat-msg-list">
                 <a href="#" class="media">
                   <div class="avatar avatar-sm avatar-online"><span class="avatar-initial bg-dark rounded-circle">b</span></div>
@@ -91,7 +90,7 @@
                   </div><!-- media-body -->
                 </a><!-- media -->
                 <a href="#" class="media">
-                  <div class="avatar avatar-sm avatar-online"><img src="../https://via.placeholder.com/350" class="rounded-circle" alt=""></div>
+                  <div class="avatar avatar-sm avatar-online"><span class="avatar-initial bg-dark rounded-circle">s</span></div>
                   <div class="media-body mg-l-10">
                     <h6 class="mg-b-0">situmay</h6>
                     <small class="d-block tx-color-04">1 hour ago</small>
@@ -99,21 +98,21 @@
                   <span class="badge badge-danger">3</span>
                 </a><!-- media -->
                 <a href="#" class="media">
-                  <div class="avatar avatar-sm avatar-offline"><img src="../https://via.placeholder.com/600" class="rounded-circle" alt=""></div>
+                  <div class="avatar avatar-sm avatar-offline"><span class="avatar-initial bg-dark rounded-circle">a</span></div>
                   <div class="media-body mg-l-10">
                     <h6 class="mg-b-0">acantones</h6>
                     <small class="d-block tx-color-04">2 hours ago</small>
                   </div><!-- media-body -->
                 </a><!-- media -->
                 <a href="#" class="media">
-                  <div class="avatar avatar-sm avatar-offline"><img src="../https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                  <div class="avatar avatar-sm avatar-offline"><span class="avatar-initial bg-dark rounded-circle">r</span></div>
                   <div class="media-body mg-l-10">
                     <h6 class="mg-b-0">rlabares</h6>
                     <small class="d-block tx-color-04">2 hours ago</small>
                   </div><!-- media-body -->
                 </a><!-- media -->
                 <a href="#" class="media">
-                  <div class="avatar avatar-sm avatar-online"><img src="../https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                  <div class="avatar avatar-sm avatar-online"><span class="avatar-initial bg-dark rounded-circle">h</span></div>
                   <div class="media-body mg-l-10">
                     <h6 class="mg-b-0">h.owen</h6>
                     <small class="d-block tx-color-04">3 hours ago</small>
@@ -127,7 +126,7 @@
                   </div><!-- media-body -->
                 </a><!-- media -->
                 <a href="#" class="media">
-                  <div class="avatar avatar-sm avatar-online"><img src="../https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                  <div class="avatar avatar-sm avatar-online"><span class="avatar-initial bg-dark rounded-circle">m</span></div>
                   <div class="media-body mg-l-10">
                     <h6 class="mg-b-0">m.audrey</h6>
                     <small class="d-block tx-color-04">4 hours ago</small>
@@ -141,7 +140,7 @@
                   </div><!-- media-body -->
                 </a><!-- media -->
                 <a href="#" class="media">
-                  <div class="avatar avatar-sm avatar-online"><img src="../https://via.placeholder.com/350" class="rounded-circle" alt=""></div>
+                  <div class="avatar avatar-sm avatar-online"><span class="avatar-initial bg-dark rounded-circle">e</span></div>
                   <div class="media-body mg-l-10">
                     <h6 class="mg-b-0">e.ocaba</h6>
                     <small class="d-block tx-color-04">4 hours ago</small>
@@ -160,7 +159,7 @@
 
           <div class="chat-sidebar-footer">
             <div class="d-flex align-items-center">
-              <div class="avatar avatar-sm avatar-online mg-r-8"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+              <div class="avatar avatar-sm avatar-online mg-r-8"><span class="avatar-initial bg-sucess rounded-circle">k</span></div>
               <h6 class="tx-semibold mg-b-0">Katherine</h6>
             </div>
             <div class="d-flex align-items-center">
@@ -182,52 +181,46 @@
             </div>
             <div class="d-flex">
               <nav id="channelNav">
-                <a href="#modalInvitePeople" data-toggle="modal"><span data-toggle="tooltip" title="Invite People"><i data-feather="user-plus"></i></span></a>
-                <a id="showMemberList" href="" data-toggle="tooltip" title="Member list" class="d-flex align-items-center">
+                <a id="showMemberList" href="" data-toggle="tooltip" title="Miembros de area" class="d-flex align-items-center">
                   <i data-feather="users"></i>
                   <span class="tx-medium mg-l-5">25</span>
                 </a>
               </nav>
               <nav id="directNav" class="d-none">
-                <a href="" data-toggle="tooltip" title="Call User"><i data-feather="phone"></i></a>
-                <a href="" data-toggle="tooltip" title="User Details"><i data-feather="info"></i></a>
-                <a href="" data-toggle="tooltip" title="Add to Favorites"><i data-feather="star"></i></a>
-                <a href="" data-toggle="tooltip" title="Flag User"><i data-feather="flag"></i></a>
+                <a href="" data-toggle="tooltip" title="Detalles de usuario"><i data-feather="info"></i></a>
               </nav>
               <nav class="mg-sm-l-10">
-                <a href="" data-toggle="tooltip" title="Channel Settings" data-placement="left"><i data-feather="more-vertical"></i></a>
+                <a href="" data-toggle="tooltip" title="Configuraciones de Area" data-placement="left"><i data-feather="more-vertical"></i></a>
               </nav>
             </div>
           </div><!-- chat-content-header -->
 
           <div class="chat-content-body">
             <div class="chat-group">
-
-              <div class="chat-group-divider">February 20, 2019</div>
+              <div class="chat-group-divider">Febrero 20, 2019</div>
               <div class="media">
                 <div class="avatar avatar-sm avatar-online"><span class="avatar-initial rounded-circle">k</span></div>
                 <div class="media-body">
-                  <h6>katherine <small>Today at 1:30am</small></h6>
+                  <h6>katherine <small>Hoy a 1:30am</small></h6>
 
-                  <p>Hello everyone, this is my first message to this channel</p>
-                  <p>anybody here?</p>
+                  <p> Lorem ipsum dolor sit amet consectetur </p>
+                  <p> Lorem, ipsum dolor ?</p>
                 </div><!-- media-body -->
               </div><!-- media -->
-              <div class="chat-group-divider">February 21, 2019</div>
+              <div class="chat-group-divider">Febrero 21, 2019</div>
               <div class="media">
                 <div class="avatar avatar-sm avatar-online"><span class="avatar-initial rounded-circle">k</span></div>
                 <div class="media-body">
-                  <h6>katherine <small>Yesterday at 4:10am</small></h6>
-
-                  <p>I'm back once again!!</p>
-                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                  <h6>katherine <small>Ayer a 4:10am</small></h6>
+                  <p>Consectetur adipisicing elit. Obcaecati quia !!</p>
+                  <p>Eius eum explicabo at quasi eveniet minus id corporis exercitationem vel ex consequatur, tenetur eligendi possimus voluptatem quis aspernatur praesentium! Cumque, aliquid.</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi numquam saepe, doloremque fugit in beatae ducimus eaque quae. Quos tempore placeat voluptatum nobis nihil soluta non ad ipsa in cupiditate</p>
                 </div><!-- media-body -->
               </div><!-- media -->
               <div class="media">
-                <div class="avatar avatar-sm avatar-online"><img src="../https://via.placeholder.com/350" class="rounded-circle" alt=""></div>
+                <div class="avatar avatar-sm avatar-online"><span class="avatar-initial rounded-circle">s</span></div>
                 <div class="media-body">
-                  <h6>situmay <small>Yesterday at 4:15am</small></h6>
+                  <h6>situmay <small>Ayer a 4:15am</small></h6>
 
                   <p>Excepteur sint occaecat cupidatat non proident</p>
                   <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse...</p>
@@ -235,9 +228,9 @@
               </div><!-- media -->
               <div class="chat-group-divider">February 22, 2019</div>
               <div class="media">
-                <div class="avatar avatar-sm avatar-offline"><img src="../https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                <div class="avatar avatar-sm avatar-offline"><span class="avatar-initial rounded-circle">r</span></div>
                 <div class="media-body">
-                  <h6>rlabares <small>Today at 9:40am</small></h6>
+                  <h6>rlabares <small>Hoy at 9:40am</small></h6>
 
                   <p>Nam libero tempore, cum soluta nobis</p>
                 </div><!-- media-body -->
@@ -245,7 +238,7 @@
               <div class="media">
                 <div class="avatar avatar-sm avatar-online"><span class="avatar-initial rounded-circle">k</span></div>
                 <div class="media-body">
-                  <h6>katherine <small>Today at 10:05am</small></h6>
+                  <h6>katherine <small>Hoy at 10:05am</small></h6>
 
                   <p>I'm back once again!!</p>
                   <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
@@ -257,7 +250,7 @@
 
           <div class="chat-sidebar-right">
             <div class="pd-y-20 pd-x-10">
-              <div class="tx-10 tx-uppercase tx-medium tx-color-03 tx-sans tx-spacing-1 pd-l-10">Members List</div>
+              <div class="tx-10 tx-uppercase tx-medium tx-color-03 tx-sans tx-spacing-1 pd-l-10">Lista de Miembros</div>
               <div class="chat-member-list">
                 <a href="#" class="media">
                   <div class="avatar avatar-sm avatar-online"><span class="avatar-initial rounded-circle">b</span></div>
@@ -266,25 +259,25 @@
                   </div><!-- media-body -->
                 </a><!-- media -->
                 <a href="#" class="media">
-                  <div class="avatar avatar-sm avatar-online"><img src="../https://via.placeholder.com/350" class="rounded-circle" alt=""></div>
+                  <div class="avatar avatar-sm avatar-online"><span class="avatar-initial rounded-circle">s</span></div>
                   <div class="media-body mg-l-10">
                     <h6 class="mg-b-0">situmay</h6>
                   </div><!-- media-body -->
                 </a><!-- media -->
                 <a href="#" class="media">
-                  <div class="avatar avatar-sm avatar-offline"><img src="../https://via.placeholder.com/600" class="rounded-circle" alt=""></div>
+                  <div class="avatar avatar-sm avatar-offline"><span class="avatar-initial rounded-circle">a</span></div>
                   <div class="media-body mg-l-10">
                     <h6 class="mg-b-0">acantones</h6>
                   </div><!-- media-body -->
                 </a><!-- media -->
                 <a href="#" class="media">
-                  <div class="avatar avatar-sm avatar-offline"><img src="../https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                  <div class="avatar avatar-sm avatar-offline"><span class="avatar-initial rounded-circle">r</span></div>
                   <div class="media-body mg-l-10">
                     <h6 class="mg-b-0">rlabares</h6>
                   </div><!-- media-body -->
                 </a><!-- media -->
                 <a href="#" class="media">
-                  <div class="avatar avatar-sm avatar-online"><img src="../https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                  <div class="avatar avatar-sm avatar-online"><span class="avatar-initial rounded-circle">h</span></div>
                   <div class="media-body mg-l-10">
                     <h6 class="mg-b-0">h.owen</h6>
                   </div><!-- media-body -->
@@ -296,7 +289,7 @@
                   </div><!-- media-body -->
                 </a><!-- media -->
                 <a href="#" class="media">
-                  <div class="avatar avatar-sm avatar-online"><img src="../https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                  <div class="avatar avatar-sm avatar-online"><span class="avatar-initial rounded-circle">m</span></div>
                   <div class="media-body mg-l-10">
                     <h6 class="mg-b-0">m.audrey</h6>
                   </div><!-- media-body -->
@@ -308,13 +301,13 @@
                   </div><!-- media-body -->
                 </a><!-- media -->
                 <a href="#" class="media">
-                  <div class="avatar avatar-sm avatar-online"><img src="../https://via.placeholder.com/350" class="rounded-circle" alt=""></div>
+                  <div class="avatar avatar-sm avatar-online"><span class="avatar-initial rounded-circle">e</span></div>
                   <div class="media-body mg-l-10">
                     <h6 class="mg-b-0">e.ocaba</h6>
                   </div><!-- media-body -->
                 </a><!-- media -->
                 <a href="#" class="media">
-                  <div class="avatar avatar-sm avatar-online"><span class="avatar-initial rounded-circle">k</span></div>
+                  <div class="avatar avatar-sm avatar-online"><span class="avatar-initial rounded-circle">a</span></div>
                   <div class="media-body mg-l-10">
                     <h6 class="mg-b-0">avendula</h6>
                   </div><!-- media-body -->
@@ -324,12 +317,11 @@
           </div><!-- chat-sidebar-right -->
 
           <div class="chat-content-footer">
-            <a href="" data-toggle="tooltip" title="Add File" class="chat-plus"><i data-feather="plus"></i></a>
+            <a href="" data-toggle="tooltip" title="Enviar Archivo" class="chat-plus"><i data-feather="plus"></i></a>
             <input type="text" class="form-control align-self-center bd-0" placeholder="Message">
             <nav>
-              <a href="" data-toggle="tooltip" title="Add GIF"><i data-feather="image"></i></a>
-              <a href="" data-toggle="tooltip" title="Add Gift"><i data-feather="gift"></i></a>
-              <a href="" data-toggle="tooltip" title="Add Smiley"><i data-feather="smile"></i></a>
+              <a href="" data-toggle="tooltip" title="Enviar Imagen"><i data-feather="image"></i></a>
+              <a href="" data-toggle="tooltip" title="Enviar"><i data-feather="smile"></i></a>
             </nav>
           </div><!-- chat-content-footer -->
         </div><!-- chat-content -->
@@ -376,8 +368,8 @@
       </div>
     </div>
   </div>
-  <?php layout('Master/scripts')?>
-  <script src="<?php asset('assets/js/dashforge.chat.js')?>"></script>
+  <?php layout('Master/scripts') ?>
+  <script src="<?php asset('assets/js/dashforge.chat.js') ?>"></script>
 </body>
 
 </html>

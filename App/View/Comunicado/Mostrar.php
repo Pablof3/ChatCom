@@ -74,6 +74,14 @@
 								<a href="#modalCreateChannel" class="chat-btn-add" data-toggle="modal"><span data-toggle="tooltip" title="Create Channel"><i data-feather="plus-circle"></i></span></a>
 							</div>
 							<nav id="allChannels" class="nav flex-column nav-chat mg-b-20">
+								<a href="#general" class="nav-link">
+									<div class="pretty p-default p-big mt-2">
+										<input type="checkbox" />
+										<div class="state p-success">
+											<label>Todas las Areas</label>
+										</div>
+									</div>
+								</a>
 								<a href="#general" class="nav-link active">
 									<div class="pretty p-default p-big mt-2">
 										<input type="checkbox" />
@@ -104,6 +112,17 @@
 						<div class="flex-fill pd-y-20 pd-x-10 bd-t">
 							<p class="tx-10 tx-uppercase tx-medium tx-color-03 tx-sans tx-spacing-1 pd-l-10 mg-b-10">Personal Activo</p>
 							<div id="chatDirectMsg" class="chat-msg-list">
+							<a href="#" class="media">
+									<div class="media-body mg-l-10">
+										<h6 class="mg-b-0">Todos los Usuarios</h6>
+									</div><!-- media-body -->
+									<div class="pretty p-default p-big mt-2">
+										<input type="checkbox" />
+										<div class="state p-success">
+											<label></label>
+										</div>
+									</div>
+								</a><!-- media -->
 								<a href="#" class="media">
 									<div class="avatar avatar-sm avatar-online"><span class="avatar-initial bg-dark rounded-circle">b</span></div>
 									<div class="media-body mg-l-10">
